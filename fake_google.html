@@ -37,6 +37,12 @@
                  width: 100%;
 
              }
+             .center{
+                 padding: auto;
+                 margin: auto;
+                 width: 20%
+                 
+             }
 
         
              #searchBar{
@@ -44,8 +50,19 @@
                  border-radius: 25px;
                  border: 1px solid rgb(227, 226, 228);
                  padding: 20px; 
-                 width: 200px;
+                 width: 200px 50%;
                  height: 15px;  
+             }
+
+             input[type=text]{
+                 width: 130px;
+                 -webkit-transition: width 0.4s ease-in-out;
+                 transition: width 0.4s;;
+             }
+
+             input[type=text]:focus{
+                 width: 100%;
+
              }
         </style>
 
@@ -61,8 +78,11 @@
         </ul>
         <img src= "google2.0.0.jpg"/> 
 
-        <input  type="text" id="searchBar"/>
+        <div class="center">
 
+         <input  type="text" id="searchBar" placeholder="Search"/>
+
+        </div>
         
         
         
